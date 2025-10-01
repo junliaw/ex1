@@ -1,0 +1,48 @@
+<!--1. 找一個音樂檔案嵌入(用audio標簽),要有控制面板,不要自動撥放,但播放後要自動重複
+2. 找一個影片檔案嵌入(用video標簽),要求同上
+3. 同2,但改用embed標簽
+4. 找一個youtube影片,將該影片嵌入
+5. 頁首要有一個連結可以跳到"我的自傳"的頁面
+6. 頁尾要有一個連結可以回到首頁 -->
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>page1</title>
+  </head>
+  <body>
+    <a href="../page2/page2.html">我的自傳</a><br />
+    <p>
+      1.找一個音樂檔案嵌入(用audio標簽),要有控制面板,不要自動撥放,但播放後要自動重複
+    </p>
+    <audio src="../media/audio.mp3" controls loop></audio><br />
+    <p>
+      2.找一個影片檔案嵌入(用video標簽),要有控制面板,不要自動撥放,但播放後要自動重複
+    </p>
+    <video src="../media/video.mp4" controls loop></video><br />
+    <p>
+      3.找一個影片檔案嵌入(用embed標簽),要有控制面板,不要自動撥放,但播放後要自動重複
+    </p>
+    <embed
+      type="video/mp4"
+      src="../media/video.mp4"
+      width="360"
+      height="360"
+    /><br />
+    <p>4.找一個youtube影片,將該影片嵌入</p>
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube-nocookie.com/embed/sEM9hC8swHs?si=8B9gwx3rcVACrTow"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    ></iframe>
+    <br />
+    <a href="../index.html">回首頁</a>
+  </body>
+</html>
